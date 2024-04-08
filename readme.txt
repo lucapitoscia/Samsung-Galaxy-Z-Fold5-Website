@@ -1,0 +1,9 @@
+Homepage, Product Page, Contact Us Page DONE!
+About Us Page could be done but can be improved
+
+ALL PAGES HAVE BEEN VALIDATED AND ARE ERROR FREE.
+
+SEO AND META COULD BE DOUBLE CHECKED
+
+IT COULD BE HANDED IN JUST DOUBLE CHECK THE RUBRIC.
+
