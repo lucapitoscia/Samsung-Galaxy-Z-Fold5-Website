@@ -836,6 +836,77 @@ summary {
 
 /* Footer Section Styling */
 
+.contactfooter {
+    background-color: var(--secondary-background); /* Match the footer's background color */
+    padding: 20px 0; /* Same vertical padding as the footer */
+    text-align: center; /* Center align the text */
+    border-top: 1px solid var(--secondary-text-color); /* Top border to separate from content above if necessary */
+    margin-top: 50px; /* Space above the contact section */
+}
+
+.contactfooter .container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactfooter h2 {
+    color: var(--primary-text-color); /* Ensure this variable is defined or use a specific color */
+    font-size: 1.5rem; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.contactfooter form {
+    width: 100%;
+    max-width: 600px; /* Limit the width of the form for better aesthetics */
+    margin: auto;
+}
+
+.contactfooter input[type="text"],
+.contactfooter input[type="email"],
+.contactfooter textarea {
+    width: 100%; /* Full-width inputs for better form structure */
+    padding: 10px; /* Padding for better text input */
+    margin-bottom: 10px; /* Space between form elements */
+    border: 1px solid #ccc; /* Subtle border for the inputs */
+    border-radius: 5px; /* Rounded corners for the inputs */
+}
+
+.contactfooter button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--primary-color); /* Ensure this variable is defined or use a specific color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contactfooter button:hover {
+    background-color: darken(var(--primary-color), 10%); /* Darken function requires a preprocessor or replace with a specific color */
+}
+
+@media screen and (max-width: 768px) {
+    .contactfooter .container {
+        width: 95%;
+        padding: 20px 3%;
+    }
+
+    .contactfooter h2 {
+        font-size: 1.25rem; /* Slightly smaller font size for smaller screens */
+    }
+
+    .contactfooter button {
+        padding: 15px 20px; /* Larger touch targets for mobile */
+    }
+}
+
 footer {
     position: relative;
     background-color: var(--secondary-background);
