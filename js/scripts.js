@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', function createHeaderAndFooter() {
                 <nav>
                     <ul class="nav-links">
                         <li><a href="${basePath}index.html">Home</a></li>
-                        <li><a href="${basePath}html/aboutus.html">About Us</a></li>
-                        <li><a href="${basePath}html/contactus.html">Contact Us</a></li>
-                        <li><a href="${basePath}html/galaxyzfold5.html">BUY NOW!</a></li>
+                        <li><a href="${basePath}../html/aboutus.html">About Us</a></li>
+                        <li><a href="${basePath}../html/contactus.html">Contact Us</a></li>
+                        <li><a href="${basePath}../html/galaxyzfold5.html">BUY NOW!</a></li>
                     </ul>
                 </nav>
             <div class="last_part">
