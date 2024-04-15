@@ -1,9 +1,9 @@
-
 // Luca Pitoscia
 // 200290440
 // March 23 2024 - April 6 2024
 // Selling Out! Assignment 
 
+// Header and Footers
 
 document.addEventListener('DOMContentLoaded', function createHeaderAndFooter() {
     const headerHTML = `
@@ -25,7 +25,21 @@ document.addEventListener('DOMContentLoaded', function createHeaderAndFooter() {
             </div>
         </header>`;
 
-    // Construct footer HTML with fixed paths
+    const contactFormHTML = `
+        <section id="contactfooter" class="contactfooter">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <!-- Contact form -->
+                <form>
+                    <input type="text" placeholder="Your Name" name="name" required>
+                    <input type="email" placeholder="Your Email" name="email" required>
+                    <textarea placeholder="Your Message" name="message" required></textarea>
+                    <button type="submit">Send Message!</button>
+                </form>
+            </div>
+        </section>
+    `;
+
     const footerHTML = `
         <footer>
             <div class="container">
@@ -37,15 +51,14 @@ document.addEventListener('DOMContentLoaded', function createHeaderAndFooter() {
     // Insert the header at the beginning of the body
     document.body.insertAdjacentHTML('afterbegin', headerHTML);
     
+    // Insert the contact form above the footer
+    document.body.insertAdjacentHTML('beforeend', contactFormHTML);
+
     // Append the footer HTML to the body
     document.body.insertAdjacentHTML('beforeend', footerHTML);
 });
 
-
-
 // Homepage Script
-
-// Homepage Video Loop
 document.addEventListener('DOMContentLoaded', (event) => {
     const video = document.getElementById('myVideo');
 
@@ -114,14 +127,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
             video.play();
         }, 5000); 
     }
-
     
     video.onended = onVideoEnd;
 
     
     video.play();
 });
-
-
-
 
