@@ -6,34 +6,30 @@
 
 
 document.addEventListener('DOMContentLoaded', function createHeaderAndFooter() {
-    
-    const basePath = '/Samsung-Galaxy-Z-Fold5-Website/';
-
-    // Dynamic Header Section Script
     const headerHTML = `
         <header>
             <div class="header-container">
-                <img src="${basePath}images/samsunglogo.jpeg" alt="Samsung Logo" class="logo">
+                <img src="/Samsung-Galaxy-Z-Fold5-Website/images/samsunglogo.jpeg" alt="Samsung Logo" class="logo">
                 <nav>
                     <ul class="nav-links">
-                        <li><a href="${basePath}index.html">Home</a></li>
-                        <li><a href="${basePath}html/aboutus.html">About Us</a></li>
-                        <li><a href="${basePath}html/contactus.html">Contact Us</a></li>
-                        <li><a href="${basePath}html/galaxyzfold5.html">BUY NOW!</a></li>
+                        <li><a href="/Samsung-Galaxy-Z-Fold5-Website/index.html">Home</a></li>
+                        <li><a href="/Samsung-Galaxy-Z-Fold5-Website/html/aboutus.html">About Us</a></li>
+                        <li><a href="/Samsung-Galaxy-Z-Fold5-Website/html/contactus.html">Contact Us</a></li>
+                        <li><a href="/Samsung-Galaxy-Z-Fold5-Website/html/galaxyzfold5.html">BUY NOW!</a></li>
                     </ul>
                 </nav>
-            <div class="last_part">
-            <div class="cart" onclick="openCart()">
-                <img src="${basePath}images/icon-cart.svg" alt="cart icon">
-                <span class="item_value" style="display: none;">0</span>
+                <div class="cart" onclick="openCart()">
+                    <img src="/Samsung-Galaxy-Z-Fold5-Website/images/icon-cart.svg" alt="cart icon">
+                    <span class="item_value" style="display: none;">0</span>
+                </div>
             </div>
         </header>`;
 
-    // Dynamic Footer Section Script
+    // Construct footer HTML with fixed paths
     const footerHTML = `
         <footer>
             <div class="container">
-                <img src="${basePath}images/samsunglogo.jpeg" alt="Samsung Logo" class="logo">
+                <img src="/Samsung-Galaxy-Z-Fold5-Website/images/samsunglogo.jpeg" alt="Samsung Logo" class="logo">
                 <p>&copy; 2024 Samsung. All rights reserved.</p>
             </div>
         </footer>`;
@@ -44,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function createHeaderAndFooter() {
     // Append the footer HTML to the body
     document.body.insertAdjacentHTML('beforeend', footerHTML);
 });
+
 
 
 // Homepage Script
