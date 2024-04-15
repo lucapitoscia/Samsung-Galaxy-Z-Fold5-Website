@@ -5,13 +5,10 @@
 // Selling Out! Assignment 
 
 
-// Header and Footers
-
 document.addEventListener('DOMContentLoaded', function createHeaderAndFooter() {
-    // Determine the base path depending on the page's directory depth
-    const pathSegments = window.location.pathname.split('/');
-    // Adjust the relative path based on the current page's depth
-    const basePath = pathSegments.length > 2 ? "../" : "";
+    
+    const basePath = '/Samsung-Galaxy-Z-Fold5-Website/';
+
     // Dynamic Header Section Script
     const headerHTML = `
         <header>
@@ -20,17 +17,18 @@ document.addEventListener('DOMContentLoaded', function createHeaderAndFooter() {
                 <nav>
                     <ul class="nav-links">
                         <li><a href="${basePath}index.html">Home</a></li>
-                        <li><a href="${basePath}../html/aboutus.html">About Us</a></li>
-                        <li><a href="${basePath}../html/contactus.html">Contact Us</a></li>
-                        <li><a href="${basePath}../html/galaxyzfold5.html">BUY NOW!</a></li>
+                        <li><a href="${basePath}html/aboutus.html">About Us</a></li>
+                        <li><a href="${basePath}html/contactus.html">Contact Us</a></li>
+                        <li><a href="${basePath}html/galaxyzfold5.html">BUY NOW!</a></li>
                     </ul>
                 </nav>
             <div class="last_part">
             <div class="cart" onclick="openCart()">
-                <img src="../images/icon-cart.svg" alt="cart icon">
+                <img src="${basePath}images/icon-cart.svg" alt="cart icon">
                 <span class="item_value" style="display: none;">0</span>
-           </div>
+            </div>
         </header>`;
+
     // Dynamic Footer Section Script
     const footerHTML = `
         <footer>
@@ -45,9 +43,8 @@ document.addEventListener('DOMContentLoaded', function createHeaderAndFooter() {
     
     // Append the footer HTML to the body
     document.body.insertAdjacentHTML('beforeend', footerHTML);
-
-
 });
+
 
 // Homepage Script
 
